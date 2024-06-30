@@ -13,7 +13,7 @@
             padding: 0;
         }
         
-        
+    
         header {
             background-color: #333;
             color: #fff;
@@ -40,21 +40,27 @@
         }
         
         
-        article { margin-bottom: 20px; }
-        
-        article h2 {
+        .content-section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .content-section h2 {
             color: #333;
             font-size: 1.5rem;
             margin-bottom: 10px;
         }
-        article p {
+        .content-section p {
             color: #666;
             line-height: 1.8;
         }
-        article img {
+        .content-section img {
             max-width: 100%;
             height: auto;
             margin-top: 10px;
+            border-radius: 4px;
         }
         
         
@@ -84,19 +90,19 @@
     </header>
 
     <main>
-        <article id="history">
+        <div class="content-section" id="history">
             <h2>History</h2>
             <p>TechCon started in 2010 as a small gathering of tech enthusiasts. Over the years, it has grown into a prominent event showcasing cutting-edge technology and fostering innovation.</p>
             <img src="history.jpg" alt="Historical image of TechCon">
-        </article>
-        <p>TechCon started in 2010 as a small gathering of tech enthusiasts. Over the years.</p>
-        <article id="mission">
+        </div>
+        
+        <div class="content-section" id="mission">
             <h2>Mission</h2>
             <p>The mission of TechCon is to inspire and educate through technology. We aim to connect industry leaders, developers, and enthusiasts to drive forward-thinking discussions and collaborations.</p>
             <img src="mission.jpg" alt="Mission of TechCon">
-        </article>
-        <p>The mission of TechCon is to inspire and educate through technology.</p>
-        <article id="past-speakers">
+        </div>
+        
+        <div class="content-section" id="past-speakers">
             <h2>Past Speakers</h2>
             <div>
                 <img src="speaker1.jpg" alt="Speaker 1">
@@ -108,7 +114,7 @@
                 <h3>Jane Smith</h3>
                 <p>Jane Smith is a cybersecurity expert and advocate for digital privacy.</p>
             </div>
-        </article>
+        </div>
     </main>
 
     <footer>
